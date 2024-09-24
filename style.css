@@ -1,0 +1,249 @@
+* {
+  font-family: arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-bottom: 90px;
+}
+.header .title {
+  width: 1900px;
+  max-width: 100%;
+  background-image: url(/img/banner.jfif);
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 4px solid wheat;
+  z-index: 1;
+}
+br.fixbreak {
+  display: none;
+}
+
+.header h1 {
+  color: #ff8b8b;
+  display: inline;
+  padding: 5px 5px;
+  background-color: white;
+  border: 4px solid wheat;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.header .banner {
+  width: 1900px;
+  max-width: 100%;
+  text-align: left;
+  padding: 20px;
+  background-color: #ff8b8b;
+  color: #ffefef;
+}
+
+.header .banner h2 {
+  display: inline;
+  margin: 20px;
+  font-size: 28px;
+}
+
+nav.hnav {
+  position: static;
+  background-color: #ffefef;
+  padding: 5px;
+}
+
+nav.pnav {
+  padding: 5px;
+  background-color: #ffefef;
+  position: sticky;
+}
+
+nav.pnav ul {
+  padding: 0;
+  text-align: center;
+}
+ul {
+  padding: 0;
+}
+nav.hnav ul {
+  text-align: center;
+}
+nav.hnav li {
+  width: 360px;
+  height: 300px;
+  max-width: 99%;
+  display: flex;
+  list-style-type: none;
+  background-color: white;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+nav.pnav li {
+  display: block;
+}
+nav.hnav li a {
+  text-decoration: none;
+  color: #aa0000;
+  font-size: 80px;
+}
+nav.pnav li a {
+  text-decoration: none;
+  color: #aa0000;
+  font-size: 18px;
+}
+nav.hnav li a:hover,
+nav.pnav li a:hover {
+  color: #ff8b8b;
+  background-color: wheat;
+}
+footer {
+  padding: 15px;
+  background-color: #aa0000;
+  color: #ffefef;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  height: 90px;
+}
+section.store {
+  background-color: #fff27c;
+  padding: 10px;
+}
+.store .welcome h2 {
+  text-align: center;
+  color: #aa0000;
+  margin: 0 10px;
+  border-bottom: 4px dashed #ffefef;
+}
+.store li {
+  list-style-type: none;
+  display: inline-block;
+  width: 140px;
+  max-width: 100%;
+  height: 60px;
+  background-color: #ffefef;
+  padding: 10px;
+  margin: 10px;
+}
+.store li p {
+  display: block;
+  text-align: center;
+  margin: 8px 5%;
+  color: black;
+}
+.store li p:hover {
+  color: #aa0000;
+  text-decoration: underline;
+}
+section.checkout {
+  text-align: center;
+  background-color: #80ff7c;
+  padding: 10px;
+}
+.checkout h3 {
+  color: black;
+  margin: 0 10px;
+  padding: 4px 0;
+  border-bottom: 4px dashed #ffefef;
+}
+.checkout p {
+  color: #444;
+  margin: 4px 20px;
+}
+.checkout button {
+  border: 2px solid #aaa;
+  background-color: #ffefef;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.checkout button:hover {
+  border: 2px solid #444;
+}
+.checkout button:active {
+  background-color: #aaa;
+}
+.recipes {
+  background-color: #e7b899;
+  padding: 10px;
+}
+.recipes article {
+  padding: 12px;
+  margin: 0 10px;
+  border-top: 4px solid #444;
+  border-bottom: 4px solid #444;
+}
+.recipes article img {
+  width: 1800px;
+  max-width: 40%;
+  border: 2px solid #ff8b8b;
+}
+.recipes article#popular img {
+  max-width: 50%;
+}
+.recipes article#popular h2 {
+  margin: 20px;
+  font-size: 1.8em;
+}
+.recipes article img {
+  margin: 4px;
+}
+.recipes article#popular img {
+  border: 4px solid white;
+}
+.recipes article img:hover,
+.recipes article#popular img:hover {
+  border-color: #80ff7c;
+}
+.recipes article h2,
+.recipes article p {
+  margin: 0 4px;
+}
+section.facts {
+  background-color: #e88bff;
+  padding: 10px;
+}
+section.facts article {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #eea8ff;
+}
+section.facts h2 {
+  margin: 0 5px;
+}
+section.facts h2::first-letter {
+  font-size: 1.1em;
+}
+section.facts p {
+  margin: 0 5px;
+  color: #444;
+}
+@media screen and (min-width: 1115px) {
+  nav.hnav li {
+    display: inline-flex;
+  }
+  body.home {
+    height: 100%;
+    background-color: #ffefef;
+  }
+  div.banner {
+    margin-top: 80px;
+  }
+  .header .title {
+    position: fixed;
+    top: 0px;
+  }
+}
+@media screen and (min-width: 600px) {
+  nav.pnav li {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 3%;
+  }
+  nav.pnav li a {
+    font-size: 22px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
